@@ -1,15 +1,16 @@
   <section id="features" class="features clearfix">
 
+    {% assign data = include.data %}
     <!-- === Features === -->
     <div class="container">
       <div class="row">
         <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
-          <h2>{{ include.data.title }}</h2>
-          <div class="devider"><i class="fa fa-{{ include.data.icon }} fa-lg"></i></div>
+          <h2>{{ data.title }}</h2>
+          <div class="devider"><i class="fa fa-{{ data.icon }} fa-lg"></i></div>
         </div>
       </div>
 
-      {% for feature in include.data.features %}
+      {% for feature in data.features %}
 	<div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="200ms">
 	  <div class="service-item">
 	    <div class="service-icon">
@@ -28,9 +29,9 @@
 
     </div>
 
-  {% if include.data.outro %}
+  {% if data.outro %}
     <div class="sec-title text-center">
-      <p>{{ include.data.outro | markdownify }}</p>
+      <p>{{ data.outro | markdownify }}</p>
     </div>
   {% endif %}
 
