@@ -1,0 +1,32 @@
+  <!-- === Slider === -->
+  <section id="slider">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators bullet -->
+      <ol class="carousel-indicators">
+        {% for slide in site.data.slider %}
+          <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+        {% endfor %}
+      </ol>
+      <!-- End Indicators bullet -->
+	
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+
+      {% for slide in site.data.slider %}
+
+        <!-- single slide -->
+	<div class="item {% if forloop.first %}active{% endif %}" style="background-image: url({{ slide.image }});">
+	  <div class="carousel-caption">
+	    <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">{{ slide.title }}</h2>
+	    <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">{{ slide.tagline }}</h3>
+	    {% if slide.desc %}<p data-wow-duration="1000ms" class="wow slideInRight animated">{{ slide.desc | markdownify }}</p>{% endif %}
+	  </div>
+	</div>
+	<!-- end single slide -->
+
+      {% endfor %}
+
+      </div>
+    </div>
+  </section>
+

@@ -1,0 +1,47 @@
+  <section id="actions" class="actions clearfix">
+
+    <!-- === Actions === -->
+    <div class="container">
+      <div class="row">
+        <div class="sec-title text-center">
+          <h2>{{ include.data.title }}</h2>
+          <div class="devider"><i class="fa fa-{{ include.data.icon }} fa-lg"></i></div>
+        </div>
+
+        <div class="sec-sub-title text-center">
+          <p>{{ include.data.intro | markdownify }}</p>
+        </div>
+
+        <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
+          <ul class="text-center">
+            <li><a href="javascript:;" data-filter="all" class="active filter">Tous</a></li>
+            {% for action in include.data.actions %}
+              <li><a href="javascript:;" data-filter=".{{ action.slug }}" class="filter">{{ action.who }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="project-wrapper">
+
+      {% for action in include.data.actions %}
+        <figure class="mix work-item {{ action.slug }}">
+	  <img src="{{ action.photo }}" alt="{{ action.title }}"/>
+	    <figcaption class="overlay">
+	      <a class="fancybox" rel="works" title="{{ action.title }}" href="{{ action.photo }}"><i class="fa fa-eye fa-lg"></i></a>
+	      <h4>{{ action.title }}</h4>
+	      <p>{{ action.who }}</p>
+	    </figcaption>
+	</figure>
+      {% endfor %}
+
+    </div>
+
+  {% if include.data.outro %}
+    <div class="sec-title text-center">
+      <p>{{ include.data.outro | markdownify }}</p>
+    </div>
+  {% endif %}
+
+  </section>
