@@ -1,4 +1,4 @@
-  <section id="features" class="features clearfix">
+  <section id="{{ include.id }}" class="features clearfix">
 
     {% assign data = include.data %}
     <!-- === Features === -->
@@ -11,7 +11,7 @@
       </div>
 
       {% for feature in data.features %}
-	<div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="200ms">
+	<div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="200ms" height="300">
 	  <div class="service-item">
 	    <div class="service-icon">
 	      <i class="fa fa-{{ feature.icon }} fa-2x"></i>

@@ -1,4 +1,4 @@
-  <section id="clubs" class="clubs clearfix">
+  <section id="{{ include.id }}" class="clubs clearfix">
 
     {% assign data = site.data.clubs %}
     <!-- === Clubs === -->
@@ -14,22 +14,50 @@
           <p>{{ data.intro | markdownify }}</p>
         </div>
 
-        {% for club in data.clubs %}
+        {% for club in site.clubs %}
           <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="100ms">
             <div class="member-thumb">
-              <img src="/assets/media/clubs/{{ club.title|lower|cut:" " }}.jpg" alt="{{ club.name }}" class="img-responsive center-block">
-              <figcaption class="overlay">
-                <h5>{{ club.title }}</h5>
+              <img src="/assets/media/clubs/{{ club.logo }}" alt="{{ club.name }}" class="img-responsive center-block">
+              <figcaption class="overlay" data-toggle="modal" data-target="#{{ club.name }}Modal">
                 <ul class="social-links text-center">
-                  <li><a href="https://twitter.com/{{ club.tw }}"><i class="fa fa-twitter fa-lg"></i></a></li>
-                  <li><a href="https://facebook.com/{{ club.fb }}"><i class="fa fa-facebook fa-lg"></i></a></li>
-                  <li><a href="https://linkedin.com/{{ club.in }}"><i class="fa fa-linkedin fa-lg"></i></a></li>
+	          <li><i class="fa fa-info fa-lg"></i></li>
                 </ul>
+                <p>Détail du club</p>
               </figcaption>
             </div>
             <h4>{{ club.title }}</h4>
-            <span>{{ club.desc | markdownify }}</span>
+            <p>{{ club.desc | markdownify }}</p>
           </figure>
+
+          <div class="modal fade" id="{{ club.name }}Modal" tabindex="-1" role="dialog" aria-labelledby="{{ club.name }}ModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content"> 
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="{{ club.name }}ModalLabel">{{ club.title }}</h4>
+                  <p>{{ club.desc | markdownify }}</p>
+                </div>
+                <div class="modal-body overflow">
+                {% for member in club.committee %}
+                  <figure class="col-md-4 col-sm-6 col-xs-12 overflow">
+                    <img src="/assets/media/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive img-circle center-block" />
+                    <h4>{{ member.name }}</h4>
+                    <span>{{ site.data.titles[member.title] }}</span>
+                  </figure>
+                {% endfor %}
+                </div>
+                {% if club.sns %}
+                <div class="modal-footer">
+                  <ul class="social-links text-center">
+                    <li><a href="https://twitter.com/{{ club.sns.tw }}"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li><a href="https://facebook.com/{{ club.sns.fb }}"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li><a href="https://linkedin.com/{{ club.sns.in }}"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                  </ul>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
         {% endfor %}
 
       </div>

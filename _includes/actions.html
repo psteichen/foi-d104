@@ -15,7 +15,7 @@
         <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
           <ul class="text-center">
             <li><a href="javascript:;" data-filter="all" class="active filter">Tous</a></li>
-            {% for action in include.data.actions %}
+            {% for action in include.actions %}
               <li><a href="javascript:;" data-filter=".{{ action.slug }}" class="filter">{{ action.who }}</a></li>
             {% endfor %}
           </ul>
@@ -25,7 +25,7 @@
  
     <div class="project-wrapper">
 
-      {% for action in include.data.actions %}
+      {% for action in include.actions %}
         <figure class="mix work-item {{ action.slug }}">
 	  <img src="/assets/media/{{ action.photo }}" alt="{{ action.title }}"/>
 	    <figcaption class="overlay">

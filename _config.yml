@@ -20,9 +20,21 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.fiftyone.lu" # the base hostname & protocol for your site, e.g. http://example.com
 facebook: fiftyone-district104
 
+collections:
+  events:
+    output: true
+    permalink: /events/:title/
+  actions_sociales:
+    output: true
+    permalink: /actions/:title/
+  clubs:
+    output: true
+    permalink: /clubs/:title/
+
+
 # Build settings
 markdown: kramdown
-gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - design
