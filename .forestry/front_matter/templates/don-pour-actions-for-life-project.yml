@@ -1,0 +1,24 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: who
+  label: Who
+  type: text
+  hidden: false
+  default: ''
+- name: photo
+  label: Photo
+  type: file
+  hidden: false
+  default: ''
