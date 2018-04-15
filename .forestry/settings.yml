@@ -4,6 +4,6 @@ frontmatter_file_url_template: "/assets/media/"
 body_file_url_template: "/assets/media/"
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: "/admin/"
 webhook_url: 
 collections: 
