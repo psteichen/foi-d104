@@ -1,0 +1,29 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- name: image
+  label: Image
+  type: file
+  hidden: false
+  default: ''
+- name: tagline
+  label: Tagline
+  type: text
+  hidden: false
+  default: ''
+- name: desc
+  label: Desc
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
