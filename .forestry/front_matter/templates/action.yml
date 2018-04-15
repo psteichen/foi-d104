@@ -1,22 +1,24 @@
 ---
-hide_body: false
+hide_body: true
 is_partial: false
 fields:
-- name: date
-  label: Date
-  type: datetime
-  hidden: false
-  default: ''
 - name: title
   label: Title
   type: text
   hidden: false
   default: ''
-- name: who
-  label: Who
-  type: text
+- name: date
+  label: Date
+  type: datetime
   hidden: false
   default: ''
+- type: select
+  name: who
+  config:
+    source:
+      type: pages
+      section: clubs
+  label: Club
 - name: photo
   label: Photo
   type: file
