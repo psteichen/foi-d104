@@ -1,0 +1,46 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Nom du club
+  config:
+    required: true
+- type: text
+  name: slug
+  label: Identifiant
+  config:
+    required: true
+  description: un mot, qui sert faire le lien avec les actions sociales
+- type: datetime
+  name: creation_date
+  label: Date de création
+  config:
+    date_format: DD-MM-YYYY
+- type: file
+  name: logo
+  label: Logo
+- type: textarea
+  name: desc
+  label: Description
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: field_group_list
+  name: committee
+  label: Comité
+  fields:
+  - type: text
+    name: name
+    label: Nom
+  - type: select
+    name: title
+    config:
+      source:
+        type: datafiles
+        file: _data-titles-yml
+        path: titles
+    label: Titre
+    default: 
