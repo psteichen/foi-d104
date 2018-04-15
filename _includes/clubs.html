@@ -14,33 +14,34 @@
           <p>{{ data.intro | markdownify }}</p>
         </div>
 
-        {% for club in site.clubs %}
+        {% assign clubs =  site.clubs | sort: 'slug' %}
+        {% for club in clubs %}
           <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="100ms">
             <div class="member-thumb">
-              <img src="/assets/media/clubs/{{ club.logo }}" alt="{{ club.name }}" class="img-responsive center-block">
-              <figcaption class="overlay" data-toggle="modal" data-target="#{{ club.name }}Modal">
-                <ul class="social-links text-center">
-	          <li><i class="fa fa-info fa-lg"></i></li>
-                </ul>
-                <p>Détail du club</p>
+              <img src="{% unless club.logo contains 'assets' %}/assets/media/clubs/{% endunless %}{{ club.logo }}" alt="{{ club.name }}" class="img-responsive center-block">
+              <figcaption class="overlay" data-toggle="modal" data-target="#{{ club.slug }}Modal">
+                <div class="text-center mt25">
+	          <i class="fa fa-info fa-lg"></i>
+                  <p>{{ data.details }}</p>
+                </div>
               </figcaption>
             </div>
             <h4>{{ club.title }}</h4>
             <p>{{ club.desc | markdownify }}</p>
           </figure>
 
-          <div class="modal fade" id="{{ club.name }}Modal" tabindex="-1" role="dialog" aria-labelledby="{{ club.name }}ModalLabel">
+          <div class="modal fade" id="{{ club.slug }}Modal" tabindex="-1" role="dialog" aria-labelledby="{{ club.slug }}ModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content"> 
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="{{ club.name }}ModalLabel">{{ club.title }}</h4>
+                  <h4 class="modal-title" id="{{ club.slug }}ModalLabel">{{ club.title }}</h4>
                   <p>{{ club.desc | markdownify }}</p>
                 </div>
                 <div class="modal-body overflow">
                 {% for member in club.committee %}
                   <figure class="col-md-4 col-sm-6 col-xs-12 overflow">
-                    <img src="/assets/media/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive img-circle center-block" />
+                    <img src="{% unless member.photo contains 'assets' %}/assets/media/{% endunless %}{{ member.photo }}" alt="{{ member.name }}" class="img-responsive img-circle center-block" />
                     <h4>{{ member.name }}</h4>
                     <span>{{ site.data.titles[member.title] }}</span>
                   </figure>

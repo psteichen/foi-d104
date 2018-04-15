@@ -1,5 +1,5 @@
 ---
-title: Aperta
+title: Luxembourg Aperta
 slug: aperta
 type: mixte
 creation_date: 2013-04-23
