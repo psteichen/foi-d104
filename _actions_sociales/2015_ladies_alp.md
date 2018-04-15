@@ -1,6 +1,6 @@
 ---
 title: Don pour Actions for Life Project
-who: Club "Ladies Luxembourg"
+who: ladies
 photo: 2015_ladies_alp.jpg
 ---
 

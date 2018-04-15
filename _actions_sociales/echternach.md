@@ -1,6 +1,6 @@
 ---
 title: Triple don
-who: Club "Echternach"
+who: echternach
 photo: don.jpg 
 ---
 

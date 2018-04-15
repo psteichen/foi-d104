@@ -1,6 +1,6 @@
 ---
 title: Don
-who: Club "Eisleck"
+who: eislek
 photo: eisleck_don.jpg 
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Aperta
+slug: aperta
 type: mixte
 creation_date: 2013-04-23
 logo: aperta.jpg

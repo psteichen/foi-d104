@@ -1,6 +1,6 @@
 ---
 title: Tournoi de pétanque
-who: Club "Aperta"
+who: aperta
 photo: 2016_aperta_petanque.jpg
 ---
 
