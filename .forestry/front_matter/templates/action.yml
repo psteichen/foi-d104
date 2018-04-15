@@ -32,3 +32,10 @@ fields:
   type: file
   hidden: false
   default: ''
+- type: textarea
+  name: detail
+  label: Détail
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
