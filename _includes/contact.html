@@ -1,71 +1,89 @@
-<section id="{{ include.id }}" class="contact">
-	<div class="container">
-		<div class="row mb50">
-		
-			<div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
-				<h2>Contactez-nous</h2>
-				<div class="devider"><i class="fa fa-envelope-o fa-lg"></i></div>
-			</div>
-			
-			<div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
-				<p>Vous avez une question, vous voulez devenir membre, ou participez à une réunion dans un des clubs ?
-				<br/>Veuillez nous contactez via le formulaire ci-dessous :</p>
-			</div>
-			
-			<!-- contact address -->
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
-				<div class="contact-address">
-					<h4>FIFTY-ONE<br/>INTERNATIONAL</h4>
-					<h5><i class="fa fa-globe"></i>&nbsp;<a href="/">www.fifty-one-international.org</a><br/></h5>
-                                        <br/>
-					<h4>District 104<br/><i>LUXEMBOURG</i></h4>
-					<h5><i class="fa fa-globe"></i>&nbsp;<a href="/">www.fiftyone.lu</a><br/></h5>
-					<h5><i class="fa fa-at"></i>&nbsp;<a href="mailto:info@fiftyone.lu">info@fiftyone.lu</a></h5>
-					<h5><i class="fa fa-facebook"></i>&nbsp;<a href="https://www.facebook.com/fiftyone.district104/">Fan Page</a></h5>
-				</div>
-			</div>
-			<!-- end contact address -->
-			
-			<!-- contact form -->
-			<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
-				<div class="contact-form">
-					<h3>Soumettre un message</h3>
-					<form action="#" id="contact-form">
-						<div class="input-group name-email">
-							<div class="input-field">
-								<input type="text" name="name" id="name" placeholder="Name" class="form-control">
-							</div>
-							<div class="input-field">
-								<input type="email" name="email" id="email" placeholder="Email" class="form-control">
-							</div>
-						</div>
-						<div class="input-group">
-							<textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
-						</div>
-						<div class="input-group">
-							<input type="submit" id="form-submit" class="pull-right" value="Send message">
-						</div>
-					</form>
-				</div>
-			</div>
-			<!-- end contact form -->
-			
-			<!-- footer social links -->
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
-				<ul class="footer-social">
-					<li><a href="https://www.facebook.com/fiftyone.district104/"><i class="fa fa-facebook fa-2x"></i></a></li>
-				</ul>
-			</div>
-			<!-- end footer social links -->
-			
-		</div>
+  <section id="{{ include.id }}" class="contact">
+    <div class="container">
+      <div class="row mb50">
+	<div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
+		<h2>{{ site.data.contact.title }}</h2>
+		<div class="devider"><i class="fa fa-envelope-o fa-lg"></i>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<i class="fa fa-facebook fa-lg"></i></div>
 	</div>
+
+	<div class="col-md-8 col-xs-12">
+
+	  <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
+	    <p>{{ site.data.contact.intro }}</p>
+	  </div>
 	
-	<!-- Google map -->
-<!--
-	<div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div>
--->
-	<!-- End Google map -->
+	  <!-- contact form -->
+	  <div class="col-xs-10 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+		<div class="contact-form">
+			<h3>{{ site.data.contact.form.title }}</h3>
+			<form action="#" id="contact-form">
+				<div class="input-group name-email">
+					<div class="input-field">
+						<input type="text" name="name" id="name" placeholder="{{ site.data.contact.form.name }}" class="form-control">
+					</div>
+					<div class="input-field">
+						<input type="email" name="email" id="email" placeholder="{{ site.data.contact.form.email }}" class="form-control">
+					</div>
+				</div>
+				<div class="input-group">
+					<textarea name="message" id="message" placeholder="{{ site.data.contact.form.message }}" class="form-control"></textarea>
+				</div>
+				<div class="input-group">
+					<input type="submit" id="form-submit" class="pull-right" value="{{ site.data.contact.form.button }}">
+				</div>
+			</form>
+		</div>
+	  </div>
+	  <!-- end contact form -->
+	
+	  <!-- footer social links -->
+	  <div class="col-xs-1 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
+	    <ul class="footer-social">
+	      <li><a href="https://www.facebook.com/fiftyone.district104/"><i class="fa fa-facebook fa-2x"></i></a></li>
+	    </ul>
+	  </div>
+	  <!-- end footer social links -->
+
+	  <!-- contact address -->
+	  <div class="col-xs-12 clearfix wow fadeInLeft animated mt25" data-wow-duration="500ms">
+            {% for l in site.data.contact.links %}
+	    <div class="col-md-6 col-xs-12">
+              <h3>{{ l.title }}</h3>
+              {% for e in l.elements %}
+                <p><i class="fa fa-{{ e.icon }}"></i>&nbsp;<a href="{{ e.url }}" target="_blank">{{ e.name }}</a></p>
+              {% endfor %}
+            </div>
+            {% endfor %}
+	  </div>
+	  <!-- end contact address -->
+
+	</div>
+
+        <div class="col-md-4 col-xs-12">
+          {% if site.data.contact.fb.intro %}
+          <div class="sec-sub-title text-center">
+            <p>{{ site.data.contact.fb.intro | markdownify }}</p>
+          </div>
+          {% endif %}
+
+          <div class="work-filter wow fadeInRight animated" data-wow-duration="1000ms">
+            <!-- facebook page-plugin -->
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffiftyone.district104%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </div>
+
+          {% if site.data.contact.fb.outro %}
+          <div class="sec-title text-center">
+            <p>{{ site.data.contact.fb.outro | markdownify }}</p>
+          </div>
+          {% endif %}
+        </div>
+
+      </div>
+    </div>
+	
+    <!-- Google map -->
+    <div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div>
+    <!-- End Google map -->
 	
 </section>
 	
