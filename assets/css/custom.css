@@ -1,4 +1,22 @@
+.mt25 {
+	margin-top: 25px;
+}
+.mt50 {
+	margin-top: 50px;
+}
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0; // remove the gap so it doesn't close
- }
+}
+.service-item {
+  min-height: 220px;
+}
+.work-item {
+  min-height: 250px;
+}
+a.fancybox {
+  color: #fff;
+}
+.team-member {
+  min-height: 310px;
+}

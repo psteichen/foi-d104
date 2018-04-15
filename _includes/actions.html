@@ -12,14 +12,6 @@
           <p>{{ include.data.intro | markdownify }}</p>
         </div>
 
-        <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
-          <ul class="text-center">
-            <li><a href="javascript:;" data-filter="all" class="active filter">TOUS</a></li>
-            {% for action in include.actions %}
-              <li><a href="javascript:;" data-filter=".{{ action.who }}" class="filter">{{ action.who|upcase }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
       </div>
     </div>
  
@@ -30,9 +22,10 @@
 	  <img src="/assets/media/{{ action.photo }}" alt="{{ action.title }}"/>
 	    <figcaption class="overlay">
 	      <a class="fancybox" rel="works" title="{{ action.title }}" href="/assets/media/{{ action.photo }}"><i class="fa fa-eye fa-lg"></i></a>
-	      <h5>{{ site.data.clubs[action.who] }}</h5>
+	      {% assign club = site.clubs | where_exp:"c","c.path contains action.who" %}
+	      <h5>{{ club.title }}</h5>
 	      <h4>{{ action.title }}</h4>
-	      <p>{{ action.content }}</p>
+	      <p>{{ action.detail | markdownify }}</p>
 	    </figcaption>
 	</figure>
       {% endfor %}
