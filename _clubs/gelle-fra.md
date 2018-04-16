@@ -6,4 +6,5 @@ creation_date: 2015-03-11 00:00:00 +0000
 logo: "/assets/media/clubs/gelle-fra.jpg"
 slug: gelle
 committee: []
+image: "/assets/media/20160528_Gelle-Fra_Public-Presentation_560x250.JPG"
 ---
