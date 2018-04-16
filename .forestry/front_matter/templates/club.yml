@@ -12,7 +12,7 @@ pages:
 - _clubs/eislek.md
 - _clubs/echternach.md
 - _clubs/bassin-minier.md
-hide_body: false
+hide_body: true
 is_partial: false
 fields:
 - type: text
@@ -23,18 +23,9 @@ fields:
 - type: file
   name: logo
   label: Logo
-- type: datetime
-  name: creation_date
-  label: Date de création
-  config:
-    date_format: DD-MM-YYYY
-- type: textarea
-  name: desc
-  label: Description
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
+- type: text
+  name: tagline
+  label: tagline
 - type: file
   name: image
   label: Photo de groupe
@@ -54,3 +45,10 @@ fields:
         path: titles
     label: Titre
     default: 
+- type: textarea
+  name: desc
+  label: Description
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
