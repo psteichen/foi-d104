@@ -3,8 +3,8 @@ title: CONTACTEZ-NOUS
 intro: 'Vous avez une question, vous voulez devenir membre, ou participez à une réunion
   dans un des clubs ? Veuillez nous contactez via le formulaire ci-dessous :'
 form:
-  title: "Soumettre un message"
-  subject: "Message via www.fiftyone.lu"
+  title: Soumettre un message
+  subject: Message via www.fiftyone.lu
   name: Nom
   email: Adresse e-mail
   message: Votre message
