@@ -6,4 +6,5 @@ creation_date: 1976-05-08 00:00:00 +0000
 logo: "/assets/media/clubs/eisleck.jpg"
 desc: Club constitué le 28 mai 1976
 committee: []
+image: "/assets/media/20160528_Eislek_Public-Presentation_560x227.jpg"
 ---
