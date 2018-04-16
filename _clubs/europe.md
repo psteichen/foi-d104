@@ -6,4 +6,5 @@ creation_date: 2011-01-01 00:00:00 +0000
 logo: "/assets/media/clubs/ladies-europe.jpg"
 desc: Club ladies, constitué en 2011
 committee: []
+image: "/assets/media/20160528_Ladies-Europ_Public-Presentation_560x227.jpg"
 ---
