@@ -6,4 +6,5 @@ creation_date: 1981-10-09 00:00:00 +0000
 logo: "/assets/media/clubs/guttland.jpg"
 slug: guttland
 committee: []
+image: "/assets/media/20160528_Guttland_Public-Presentation_560x250.jpg"
 ---
