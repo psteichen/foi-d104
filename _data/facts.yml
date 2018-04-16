@@ -2,15 +2,15 @@
 title: Chiffres clés du District 104
 icon: bar-chart
 facts:
-  - title: Nombre de clubs
-    icon: building-o
-    number: 12
-  - title: Dons (en €) réalisés en 2016
-    icon: money
-    number: 36400
-  - title: Nombre de membres
-    icon: users
-    number: 300
-  - title: Années d'existence du FOI
-    icon: birthday-cake
-    number: 51
+- title: Nombre de clubs
+  icon: building-o
+  number: 12
+- title: Dons (en €) réalisés en 2016
+  icon: money
+  number: 36400
+- title: Nombre de membres
+  icon: users
+  number: 300
+- title: Années d'existence du FOI
+  icon: birthday-cake
+  number: 51
