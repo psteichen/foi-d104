@@ -1,30 +1,24 @@
-# Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
+# BASE & PREPROD config
 #
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
 title: FIFTY-ONE International | District 104 | Luxembourg
 logo: logo.png
 email: admin@fiftyone.lu
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+description: > 
+  Depuis 51 ans le soutien de projets sociaux
+  à travers l'amitié, l'estime, la tolérance
+
+baseurl: ""
 url: "https://preprod.fiftyone.lu" # the base hostname & protocol for your site, e.g. http://example.com
+
 facebook: fiftyone-district104
 
 collections:
   events:
     output: true
     permalink: /events/:title/
-  actions_sociales:
+  actions:
     output: true
     permalink: /actions/:title/
   clubs:
@@ -38,3 +32,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - design
+
+deploy:
+  - rsync -aze ssh --delete ./ pst@aperta.lu:/var/www/fiftyone.lu/preprod/

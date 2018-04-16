@@ -1,4 +1,7 @@
 #
-# PRDO config
+# PROD config
 #
-url: "https://preprod.fiftyone.lu"
+url: "https://www.fiftyone.lu"
+
+deploy:
+  - rsync -aze ssh --delete ./ pst@aperta.lu:/var/www/fiftyone.lu/www/
