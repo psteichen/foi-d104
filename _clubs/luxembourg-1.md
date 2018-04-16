@@ -6,4 +6,5 @@ slug: ladies
 creation_date: 2011-01-01 00:00:00 +0000
 logo: "/assets/media/clubs/luxembourg1.jpg"
 committee: []
+image: "/assets/media/20160528_Ladies-Lux1_Public-Presentation_560x227.jpg"
 ---
