@@ -6,4 +6,5 @@ logo: "/assets/media/clubs/luxembourg.jpg"
 tagline: Club constitué le ??
 creation_date: ''
 committee: []
+image: "/assets/media/20160528_Luxembourg_Public-Presentation_560x227.jpg"
 ---

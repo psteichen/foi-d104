@@ -6,4 +6,5 @@ creation_date: Invalid date
 tagline: Club constitué en 1978
 logo: "/assets/media/clubs/echternach.jpg"
 committee: []
+image: "/assets/media/20160528_Echternach_Public-Presentation_560x250.JPG"
 ---
