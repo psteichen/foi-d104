@@ -17,7 +17,7 @@ committee:
   title: treso
 - name: Norbert Miranda
   title: proto
-desc: Club mixte, constitué le 23 avril 2013
+tagline: Club mixte, constitué le 23 avril 2013
 date: 2018-04-16 07:35:25 +0000
 image: "/assets/media/20150528_Aperta_560x250.jpg"
 ---
