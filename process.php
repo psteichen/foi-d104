@@ -1,14 +1,18 @@
 <?php
-    $to = "admin@fiftyone.lu";
-    $from = $_REQUEST['name'];
-    $subject = $_REQUEST['subject'];
+    $to = "info@fiftyone.lu";
+    $from = "no-reply@fiftyone.lu";
+    $subject = "Message depuis www.fiftyone.lu";
+    $subject_user = "Votre message soumis via www.fiftyone.lu";
     $name = $_REQUEST['name'];
+    $email = $_REQUEST['email'];
+    $message = $_REQUEST['message'];
     $headers = "From: $from";
     $fields = array();
-    $fields{"name"} = "name";
-    $fields{"email"} = "email";
-    $fields{"subject"} = "subject";
-    $fields{"message"} = "message";
-    $body = "Here is what was sent:\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
+    $fields{"name"} = "Nom";
+    $fields{"email"} = "Email";
+    $fields{"message"} = "Message";
+    $body = "Bonjour,\n\nVoici un message provenant d'un utilisateur du site www.fiftyone.lu :\n\n"; foreach($fields as $a => $b){$body .= sprintf("%s : %30s\n\n",$b,$_REQUEST[$a]); }
+    $body_user = "Bonjour,\n\nVoici copie de votre message soumis via le site www.fiftyone.lu :\n\n"; foreach($fields as $c => $d){$body_user .= sprintf("%s : %30s\n\n",$d,$_REQUEST[$c]); }
     $send = mail($to, $subject, $body, $headers);
+    $send_user = mail($email, $subject_user, $body_user, $headers);
 ?>
