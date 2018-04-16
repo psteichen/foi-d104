@@ -9,10 +9,10 @@
     margin-top: 0; // remove the gap so it doesn't close
 }
 .service-item {
-  min-height: 220px;
+  min-height: 280px;
 }
 .work-item {
-  min-height: 250px;
+  min-height: 280px;
 }
 a.fancybox {
   color: #fff;

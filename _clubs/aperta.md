@@ -13,7 +13,7 @@ committee:
   title: vpresi
 - name: Christian Streitz
   title: secr
-- name: tom Welter
+- name: Tom Welter
   title: treso
 - name: Norbert Miranda
   title: proto
