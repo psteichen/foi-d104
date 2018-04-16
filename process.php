@@ -1,5 +1,5 @@
 <?php
-    $to = "";
+    $to = "admin@fiftyone.lu";
     $from = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
     $name = $_REQUEST['name'];
