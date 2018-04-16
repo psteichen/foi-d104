@@ -39,6 +39,7 @@
                   <p>{{ club.desc | markdownify }}</p>
                 </div>
                 <div class="modal-body row">
+                  {% if club.image %}<img src="{% unless club.image contains 'assets' %}/assets/media/{% endunless %}{{ club.image }}" alt="{{ club.title }}" class="img-responsive center-block" />{% endif %}
                   {% for member in club.committee %}
                     <div class="col-md-4 col-sm-6 col-xs-12 overflow">
                       <img src="{% unless member.photo contains 'assets' %}/assets/media/{% endunless %}{{ member.photo }}" alt="{{ member.name }}" class="img-responsive img-circle center-block" />
