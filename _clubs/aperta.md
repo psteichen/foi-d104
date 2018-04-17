@@ -20,5 +20,5 @@ committee:
 desc: ''
 date: 2018-04-16 07:35:25 +0000
 image: "/assets/media/20150528_Aperta_560x250.jpg"
-tagline: Club mixte, constitué le 23 avril 2013
+tagline: 1er club *mixte* du district, constitué le 23 avril 2013
 ---
