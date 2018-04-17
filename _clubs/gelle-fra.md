@@ -7,5 +7,5 @@ logo: "/assets/media/clubs/gelle-fra.jpg"
 slug: gelle
 committee: []
 image: "/assets/media/20160528_Gelle-Fra_Public-Presentation_560x250.JPG"
-tagline: Club ladies, constitué le 11 mars 2015
+tagline: 3ème club *ladies" du district, constitué le 11 mars 2015
 ---
