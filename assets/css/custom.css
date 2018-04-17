@@ -19,5 +19,8 @@ a.fancybox {
   color: #fff;
 }
 .team-member {
-  min-height: 310px;
+  height: 300px;
+}
+.member-thumb {
+  height: 200px;
 }

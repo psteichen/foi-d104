@@ -12,7 +12,7 @@
        <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
           <p>{{ include.data.intro | markdownify }}</p>
           <br />
-          <img class="img-thumnbail" src="/assets/media/{{ include.data.logo }}"/>
+          <img class="img-thumnbail" height="300" src="/assets/media/{{ include.data.logo }}"/>
         </div>
 
         <div class="col-md-1"></div>
@@ -20,15 +20,43 @@
           <figure class="team-member col-md-2 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
             <div class="member-thumb">
               <img src="/assets/media/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive img-circle center-block">
-              <figcaption class="overlay">
-                <h5>{{ site.data.titles[member.title] }}</h5>
-                <p>{{ member.desc | richtext }}</p>
-              </figcaption>
+              {% if member.message %} 
+                <figcaption class="overlay" data-toggle="modal" data-target="#{{ member.title }}Modal">
+                  <em>{{ member.message }}</em>
+                </figcaption>
+                {% else %} 
+                <figcaption class="overlay">
+                  <h5>{{ member.name }}</h5>
+                  <p>{{ site.data.titles[member.title] }}</p>
+                </figcaption>
+                {% endif %} 
             </div>
             <h4>{{ member.name }}</h4>
             <span>{{ site.data.titles[member.title] }}</span>
           </figure>
+
+          <div class="modal fade" id="{{ member.title }}Modal" tabindex="-1" role="dialog" aria-labelledby="{{ member.title }}ModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content"> 
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="{{ member.title }}ModalLabel">{{ member.name }} - <strong>{{ site.data.titles[member.title] }}</strong></h4>
+                  <p>{{ member.message }}</p>
+                </div>
+                <div class="modal-body row">
+                  {% if member.video %} 
+                  <div align="center" class="embed-responsive embed-responsive-16by9">
+                    <video controls autoplay loop class="embed-responsive-item">
+                      <source src="{{ member.video }}" type="video/mp4">
+                    </video>
+                   </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
         {% endfor %}
+
         <div class="col-md-1"></div>
 
       </div>

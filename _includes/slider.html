@@ -1,10 +1,10 @@
   <!-- === Slider === -->
   <section id="slider">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div id="carousel-events" class="carousel slide" data-ride="carousel">
       <!-- Indicators bullet -->
       <ol class="carousel-indicators">
         {% for s in site.events %}
-          <li data-target="#carousel-example-generic" data-slide-to="{{ foorloop.index }}" {% if forloop.first %}class="active"{% endif %}></li>
+          <li data-target="#carousel-events" data-slide-to="{{ forloop.index }}" {% if forloop.first %}class="active"{% endif %}></li>
         {% endfor %}
       </ol>
       <!-- End Indicators bullet -->
