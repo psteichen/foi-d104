@@ -8,7 +8,7 @@ committee:
 - name: Alex Mertzig
   title: gouv
   photo: mertzigalex.jpg
-  message: "Message video de la part du Gouverneur"
+  message: Message video de la part du Gouverneur
   video: "/assets/media/alexmertzig.mp4"
 - name: Sepp Pannrucker
   title: pgouv
