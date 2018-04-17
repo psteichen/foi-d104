@@ -7,5 +7,5 @@ logo: "/assets/media/clubs/ladies-europe.jpg"
 desc: ''
 committee: []
 image: "/assets/media/20160528_Ladies-Europ_Public-Presentation_560x227.jpg"
-tagline: Club ladies, constitué en 2011
+tagline: 2ème club *ladies* du district, constitué en 2011
 ---
