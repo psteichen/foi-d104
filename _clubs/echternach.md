@@ -7,5 +7,5 @@ desc: ''
 logo: "/assets/media/clubs/echternach.jpg"
 committee: []
 image: "/assets/media/20160528_Echternach_Public-Presentation_560x250.JPG"
-tagline: Club constitué en 1978
+tagline: 5ème club du district, constitué en 1978
 ---
