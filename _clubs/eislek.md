@@ -7,5 +7,5 @@ logo: "/assets/media/clubs/eisleck.jpg"
 desc: ''
 committee: []
 image: "/assets/media/20160528_Eislek_Public-Presentation_560x227.jpg"
-tagline: Club constitué le 28 mai 1976
+tagline: 3ème club du district, constitué le 28 mai 1976
 ---
