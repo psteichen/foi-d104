@@ -7,5 +7,5 @@ logo: "/assets/media/clubs/guttland.jpg"
 slug: guttland
 committee: []
 image: "/assets/media/20160528_Guttland_Public-Presentation_560x250.jpg"
-tagline: Club constitué le 9 octobre 1981
+tagline: 7ème club du district, constitué le 9 octobre 1981
 ---
