@@ -4,7 +4,8 @@ date: 2018-04-15 18:45:47 +0000
 slug: esch
 creation_date: 1973-02-12 00:00:00 +0000
 logo: "/assets/media/clubs/esch-alzette.jpg"
-tagline: Club constitué le 12 février 1973
+tagline: 2ème club du district, constitué le 12 février 1973
 committee: []
 image: "/assets/media/20160528_Esch_Presentation_560x227.jpeg"
+desc: ''
 ---
