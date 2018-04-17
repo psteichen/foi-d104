@@ -7,5 +7,5 @@ logo: "/assets/media/clubs/bassin-minier.jpg"
 desc: ''
 committee: []
 image: "/assets/media/20160528_Bassin-Minier_Public-Presentation_560x250.JPG"
-tagline: 9ème club du District, constitué le 4 mai 1988
+tagline: 9ème club du district, constitué le 4 mai 1988
 ---
