@@ -5,14 +5,14 @@ logo: district.jpg
 intro: Le Grand-Duché du Luxembourg rejoins le mouvement FIFTY-ONE International en
   1985 et devient le District 104.
 committee:
+- name: Sepp Pannrucker
+  title: pgouv
+  photo: pannruckersepp.jpg
 - name: Alex Mertzig
   title: gouv
   photo: mertzigalex.jpg
   message: Message video de la part du Gouverneur
   video: "/assets/media/alexmertzig.mp4"
-- name: Sepp Pannrucker
-  title: pgouv
-  photo: pannruckersepp.jpg
 - name: Marc Belleville
   title: vgouv
   photo: bellevillemarc.jpg
