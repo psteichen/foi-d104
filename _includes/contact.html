@@ -36,14 +36,6 @@
 	  </div>
 	  <!-- end contact form -->
 	
-	  <!-- footer social links -->
-	  <div class="col-xs-1 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
-	    <ul class="footer-social">
-	      <li><a href="https://www.facebook.com/fiftyone.district104/"><i class="fa fa-facebook fa-2x"></i></a></li>
-	    </ul>
-	  </div>
-	  <!-- end footer social links -->
-
 	  <!-- contact address -->
 	  <div class="col-xs-12 clearfix wow fadeInLeft animated mt50" data-wow-duration="500ms">
             {% for l in site.data.contact.links %}
@@ -59,12 +51,13 @@
 
 	</div>
 
-        <div class="col-md-4 col-xs-12">
+        <div class="col-md-3 col-xs-11">
           {% if site.data.contact.fb.intro %}
           <div class="sec-sub-title text-center">
             <p>{{ site.data.contact.fb.intro | markdownify }}</p>
           </div>
           {% endif %}
+
 
           <div class="work-filter wow fadeInRight animated" data-wow-duration="1000ms">
             <!-- facebook page-plugin -->
@@ -77,6 +70,12 @@
           </div>
           {% endif %}
         </div>
+
+        <div class="col-xs-1 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
+          <br/>
+          <br/>
+	  <a href="https://www.facebook.com/fiftyone.district104/"><i class="fa fa-facebook fa-2x"></i></a>
+	</div>
 
       </div>
     </div>
