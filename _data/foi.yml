@@ -8,13 +8,12 @@ features:
   icon: globe
   body: |
     Le Fifty-One est une Association Internationale à but philanthropique composé de clubs Fifty-One dont elle assure le développement harmonieux dans l’esprit d’amitié, d’estime et de de tolérance.
-    
+
     Le Fifty-One International compte actuellement quelques 140 clubs avec 2400 membres organisés en clubs. Ces clubs se trouvent tous en Europe et notamment en Allemagne, Belgique, France, Luxembourg, Pays-Bas et Suisse.
 
     Le club Fifty-One est administré par un comité élu chaque année par les membres, sous la responsabilité d’un président. Les clubs d'une même région sont regroupés au sein d'un district homogène sous la responsabilité d'un Gouverneur et d'un comité de district. Le Gouverneur est élu chaque année par les clubs réunis en assemblée générale. Il reste normalement en charge durant deux exercices.
 
     Les clubs de tous les districts se réunissent une fois par an en Assemblée Générale pour élire les membres du Conseil Général. Le Gouverneur Général est élu pour une période maximum de deux années consécutives.
-
 - title: Fonctionnement des clubs
   icon: users
   body: |
@@ -23,13 +22,13 @@ features:
     Le bonne marche du club implique l'assiduité de tous ses membres aux réunions statutaires et aux manifestations qu'il organise. Afin de réaliser les contacts les plus fructueux entre ses classifications professionnelles qui permettent la rencontre de représentants de fonctions et de disciplines très différentes.
 - title: L'esprit Fifty-One
   icon: lightbulb-o
-  body: |
-    L’esprit du Fifty-One se montre par la franche amitié au sein de laquelle la personnalité de chacun peut s’épanouir dans le respect de l'autre. Les réunions de club et actions se déroulent dans la dignité. 
-
-    L’ouverture d’esprit et l’observation des règles simples de courtoisie sont les reflets de nos membres honorables et fiers de servir les buts du Fifty-One.
+  body: "L’esprit du Fifty-One se montre par la franche amitié au sein de laquelle
+    la personnalité de chacun peut s’épanouir dans le respect de l'autre. Les réunions
+    de club et actions se déroulent dans la dignité. \n\nL’ouverture d’esprit et l’observation
+    des règles simples de courtoisie sont les reflets de nos membres honorables et
+    fiers de servir les buts du Fifty-One.\n"
 - title: Historique
   icon: book
   body: |-
     Le Fifty-One International est fondé le octobre 1966 à Waterloo, lieu historique et témoin d’une des plus meurtrières batailles sur le continent européen. Il fut consciemment  chois par les fondateurs pour lancer un vibrant appel à la tolérance, la fraternité,et à la solidarité humaine. Le Fifty-One s’est voulu International car les hommes de bonne volonté sont de partout, l’amitié ne connaissant pas de frontière.
     Le mouvement du Fifty-One a connu une expansion appréciable et ses clubs se trouvent aujourd’hui tous en Europe et notamment en Allemagne, en Belgique, la France, le Luxembourg, les Pays-Bas et la Suisse.
-

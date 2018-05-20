@@ -1,17 +1,4 @@
 ---
-pages:
-- _clubs/aperta.md
-- _clubs/moselle.md
-- _clubs/luxembourg.md
-- _clubs/letzebuerg.md
-- _clubs/europe.md
-- _clubs/luxembourg-1.md
-- _clubs/gelle-fra.md
-- _clubs/esch-alzette.md
-- _clubs/guttland.md
-- _clubs/eislek.md
-- _clubs/echternach.md
-- _clubs/bassin-minier.md
 hide_body: true
 is_partial: false
 fields:
@@ -52,3 +39,16 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+pages:
+- _clubs/aperta.md
+- _clubs/moselle.md
+- _clubs/luxembourg.md
+- _clubs/letzebuerg.md
+- _clubs/europe.md
+- _clubs/luxembourg-1.md
+- _clubs/gelle-fra.md
+- _clubs/esch-alzette.md
+- _clubs/guttland.md
+- _clubs/eislek.md
+- _clubs/echternach.md
+- _clubs/bassin-minier.md
