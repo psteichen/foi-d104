@@ -15,11 +15,13 @@ body {
     color: #6a737b;
 }
 
+/*
 ol, ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+*/
 
 figure, p {
     margin: 0;
@@ -292,6 +294,10 @@ top: -8px;
 
 .features {
   background-color: #f4f7f9;
+}
+
+.features .col-md-6 {
+  height: 375px;
 }
 
 .owl-controls {
