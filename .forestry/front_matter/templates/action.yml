@@ -31,3 +31,5 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+pages:
+- _actions/plusieurs-dons-du-club-moselle.md
