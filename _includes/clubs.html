@@ -44,7 +44,7 @@
                   {% if club.committee[0] %}<h3>{{ data.committee }}</h5>{% endif %}
                   {% for member in club.committee %}
                     <div class="col-md-4 col-sm-6 col-xs-12 overflow">
-                      <img src="{% unless member.photo contains 'assets' %}/assets/media/{% endunless %}{{ member.photo }}" alt="{{ member.name }}" class="img-responsive img-circle center-block" />
+                      {% if member.photo %}<img src="{% unless member.photo contains 'assets' %}/assets/media/{% endunless %}{{ member.photo }}" alt="{{ member.name }}" class="img-responsive img-circle center-block" />{% endif %}
                       <h4>{{ member.name }}</h4>
                       <span>{{ site.data.titles[member.title] }}</span>
 		      <br/><br/>
