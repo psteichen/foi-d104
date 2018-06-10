@@ -32,6 +32,7 @@ fields:
     schema:
       format: markdown
 pages:
+- _actions/echternach.md
 - _actions/2016-aperta-petanque.md
 - _actions/2015-district-relais-pour-la-vie.md
 - _actions/2015_ladies_alp.md
