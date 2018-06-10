@@ -32,5 +32,6 @@ fields:
     schema:
       format: markdown
 pages:
+- _actions/2016-gelle-fra-ate.md
 - _actions/eisleck.md
 - _actions/plusieurs-dons-du-club-moselle.md
