@@ -19,9 +19,9 @@
 
       {% for action in include.actions %}
       <figure class="mix work-item {{ action.who }}">
-	    <img src="/assets/media/{{ action.photo }}" alt="{{ action.title }}"/>
+	    <img src="{% unless action.photo contains 'assets' %}/assets/media/{% endunless %}{{ action.photo }}" alt="{{ action.title }}"/>
 	    <figcaption class="overlay">
-	      <a class="fancybox" rel="works" title="{{ action.title }}" href="/assets/media/{{ action.photo }}"><i class="fa fa-eye fa-lg"></i></a>
+	      <a class="fancybox" rel="works" title="{{ action.title }}" href="{% unless action.photo contains 'assets' %}/assets/media/{% endunless %}{{ action.photo }}"><i class="fa fa-eye fa-lg"></i></a>
 	      {% assign club = site.clubs | where_exp:"c","c.path contains action.who" %}
 	      <h5>{{ club.title }}</h5>
 	      <h4>{{ action.title }}</h4>
