@@ -1,4 +1,5 @@
 ---
+label: Event
 hide_body: true
 is_partial: false
 fields:
@@ -30,5 +31,5 @@ fields:
     schema:
       format: markdown
 pages:
-- _events/minimasters.md
 - _events/51-anniversaire.md
+- _events/minimasters.md

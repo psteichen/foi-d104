@@ -1,4 +1,5 @@
 ---
+label: Action
 hide_body: true
 is_partial: false
 fields:
@@ -32,10 +33,11 @@ fields:
     schema:
       format: markdown
 pages:
-- _actions/echternach.md
-- _actions/2016-aperta-petanque.md
+- _actions/don-a-l-association-therapeutique-equestre.md
 - _actions/2015-district-relais-pour-la-vie.md
+- _actions/2016-aperta-petanque.md
+- _actions/echternach.md
+- _actions/plusieurs-dons-du-club-moselle.md
 - _actions/2015_ladies_alp.md
 - _actions/2016-gelle-fra-ate.md
 - _actions/eisleck.md
-- _actions/plusieurs-dons-du-club-moselle.md
