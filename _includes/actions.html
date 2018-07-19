@@ -17,7 +17,8 @@
  
     <div class="project-wrapper">
 
-      {% for action in include.actions reversed %}
+      {% assign actions=include.actions | reverse %}
+      {% for action in actions limit:8 %}
       <figure class="mix work-item {{ action.who }}">
 	    <img src="{% unless action.photo contains 'assets' %}/assets/media/{% endunless %}{{ action.photo }}" alt="{{ action.title }}"/>
 	    <figcaption class="overlay">
