@@ -28,7 +28,6 @@ collections:
     hidden: true
 
 
-
 # Build settings
 markdown: kramdown
 exclude:
