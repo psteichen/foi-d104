@@ -24,6 +24,10 @@ collections:
   clubs:
     output: true
     permalink: /clubs/:title/
+  _posts:
+    path: _posts
+    hidden: true
+
 
 
 # Build settings
