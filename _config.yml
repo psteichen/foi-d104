@@ -25,7 +25,6 @@ collections:
     output: true
     permalink: /clubs/:title/
   _posts:
-    path: _posts
     hidden: true
 
 
@@ -39,3 +38,4 @@ exclude:
 
 deploy:
   - rsync -aze ssh --delete ./ pst@aperta.lu:/var/www/fiftyone.lu/preprod/
+
