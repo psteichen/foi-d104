@@ -24,9 +24,6 @@ collections:
   clubs:
     output: true
     permalink: /clubs/:title/
-  _posts:
-    hidden: true
-
 
 # Build settings
 markdown: kramdown
