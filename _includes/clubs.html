@@ -42,13 +42,14 @@
                   {% if club.image %}<img src="{% unless club.image contains 'assets' %}/assets/media/{% endunless %}{{ club.image }}" alt="{{ club.title }}" class="img-responsive center-block" />{% endif %}
         		  <br/>
                   {% if club.desc != '' %}<p>{{ club.desc }}</p>{% endif %}
-                  {% if club.committee[0] %}<h3>{{ data.committee }}</h3>{% endif %}
+                  {% if club.committee[0] %}<h4>{{ data.committee }}</h4>{% endif %}
                   {% for member in club.committee %}
-                    <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="btn-group">
+                      <div class="btn btn-default">
                       {% if member.photo %}<img src="{% unless member.photo contains 'assets' %}/assets/media/{% endunless %}{{ member.photo }}" alt="{{ member.name }}" class="img-responsive img-circle center-block" />{% endif %}
-                      <h4>{{ member.name }}</h4>
-                      <span>{{ site.data.titles[member.title] }}</span>
-	        	      <br/><br/>
+                      <h5>{{ member.name }}</h5>
+                      <small>{{ site.data.titles[member.title] }}</small>
+                      </div>
                     </div>
                   {% endfor %}
                 </div>
