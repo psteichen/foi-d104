@@ -41,6 +41,7 @@ fields:
     schema:
       format: markdown
 pages:
+- _clubs/esch-alzette.md
 - _clubs/echternach.md
 - _clubs/europe.md
 - _clubs/gelle-fra.md
@@ -48,7 +49,6 @@ pages:
 - _clubs/eislek.md
 - _clubs/letzebuerg.md
 - _clubs/bassin-minier.md
-- _clubs/esch-alzette.md
 - _clubs/luxembourg.md
 - _clubs/guttland.md
 - _clubs/luxembourg-1.md
