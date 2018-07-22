@@ -17,7 +17,7 @@
 
         <div class="col-md-1"></div>
         {% for member in include.data.committee %}
-          <figure class="team-member col-md-2 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+          <figure class="team-member col-md-2 col-sm-6 col-xs-6 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
             <div class="member-thumb">
               <img src="/assets/media/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive img-circle center-block">
               {% if member.message %} 

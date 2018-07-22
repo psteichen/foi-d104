@@ -8,9 +8,11 @@
     display: block;
     margin-top: 0;
 }
-.service-item {
-  min-height: 300px;
+/*
+.features .col-md-6 {
+  min-height: 575px;
 }
+*/
 .work-item {
   overflow: hidden;
   height: 280px;
