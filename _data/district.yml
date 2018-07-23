@@ -9,10 +9,10 @@ committee:
   title: pgouv
   photo: pannruckersepp.jpg
 - name: Alex Mertzig
-  title: gouv
+  title: vgouv
   photo: mertzigalex.jpg
-  message: Message video de la part du Gouverneur
-  video: "/assets/media/alexmertzig.mp4"
+  message: ''
+  video: ''
 - name: Marc Belleville
   title: vgouv
   photo: bellevillemarc.jpg
