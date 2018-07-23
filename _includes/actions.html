@@ -21,15 +21,20 @@
       <div class="row">
         {% assign actions=include.actions | reverse %}
         {% for action in actions limit:8 %}
-          <figure class="col-xs-12 col-sm-12 col-md-6 work-item">
+          <figure class="col-xs-12 col-sm-12 col-md-6 work-item {{ forloop.index }}">
 	      <img class="img-responsive thumbnail center-block" src="{% unless action.photo contains 'assets' %}/assets/media/{% endunless %}{{ action.photo }}" alt="{{ action.title }}" />
-	      <figcaption class="overlay">
-	        <a class="fancybox" rel="works" title="{{ action.title }}" href="{% unless action.photo contains 'assets' %}/assets/media/{% endunless %}{{ action.photo }}"><i class="fa fa-eye fa-lg"></i></a>
-	        {% assign club = site.clubs | where_exp:"c","c.path contains action.who" %}
-	        <h5>{{ club.title }}</h5>
-	        <h4>{{ action.title }}</h4>
-	        <p>{{ action.detail | markdownify }}</p>
-	      </figcaption>
+	      <a class="fancybox" rel="works" title="{{ action.title }}" href="{% unless action.photo contains 'assets' %}/assets/media/{% endunless %}{{ action.photo }}">
+	        <figcaption class="overlay">
+		  <br/>
+                  {% for club in site.clubs %}
+	            {% if action.who contains club.path %}<h5>Club {{ club.title }}</h5>{% endif %}
+                  {% endfor %}
+		  <br/>
+                  <i class="fa fa-eye fa-2x"></i>
+	          <h4>{{ action.title }}</h4>
+	          <p>{{ action.detail | markdownify }}</p>
+	        </figcaption>
+              </a>
 	  </figure>
         {% endfor %}
       </div>
