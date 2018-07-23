@@ -1,0 +1,48 @@
+  <section id="actions" class="actions clearfix">
+
+    <!-- === Actions === -->
+    <div class="container">
+      <div class="row">
+        <div class="sec-title text-center">
+          <h2>{{ include.data.title }}</h2>
+          <div class="devider"><i class="fa fa-{{ include.data.icon }} fa-lg"></i></div>
+        </div>
+
+        <div class="sec-sub-title text-center">
+          <p>{{ include.data.intro | markdownify }}</p>
+        </div>
+
+      </div>
+    </div>
+ 
+  <div class="row">
+    <div class="project-wrapper col-sm-9 col-xs-12">
+
+      {% assign actions=include.actions | reverse %}
+      {% for action in actions limit:8 %}
+      <figure class="mix work-item {{ action.who }}">
+	    <img src="{% unless action.photo contains 'assets' %}/assets/media/{% endunless %}{{ action.photo }}" alt="{{ action.title }}"/>
+	    <figcaption class="overlay">
+	      <a class="fancybox" rel="works" title="{{ action.title }}" href="{% unless action.photo contains 'assets' %}/assets/media/{% endunless %}{{ action.photo }}"><i class="fa fa-eye fa-lg"></i></a>
+	      {% assign club = site.clubs | where_exp:"c","c.path contains action.who" %}
+	      <h5>{{ club.title }}</h5>
+	      <h4>{{ action.title }}</h4>
+	      <p>{{ action.detail | markdownify }}</p>
+	    </figcaption>
+	  </figure>
+      {% endfor %}
+
+    </div>
+    <div class="col-sm-3 col-xs-11">
+      {% include facebook.html %}
+    </div>
+  </div>
+
+
+  {% if include.data.outro %}
+    <div class="sec-title text-center">
+      <p>{{ include.data.outro | markdownify }}</p>
+    </div>
+  {% endif %}
+
+  </section>

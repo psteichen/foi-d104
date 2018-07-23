@@ -62,7 +62,7 @@
 /* works */
 
 .work-item {
-  width: 33%;
+  width: 50%;
 }
 
 /* team */
@@ -250,7 +250,7 @@ background-position: center top !important;
 
 .work-item {
   left: inherit !important;
-  width: 50%;
+  width: 100%;
 }
 
 }

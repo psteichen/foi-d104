@@ -15,23 +15,31 @@
       </div>
     </div>
  
-    <div class="project-wrapper">
+  <div class="row">
+    <div class="col-sm-8 col-xs-12">
 
-      {% assign actions=include.actions | reverse %}
-      {% for action in actions limit:8 %}
-      <figure class="mix work-item {{ action.who }}">
-	    <img src="{% unless action.photo contains 'assets' %}/assets/media/{% endunless %}{{ action.photo }}" alt="{{ action.title }}"/>
-	    <figcaption class="overlay">
-	      <a class="fancybox" rel="works" title="{{ action.title }}" href="{% unless action.photo contains 'assets' %}/assets/media/{% endunless %}{{ action.photo }}"><i class="fa fa-eye fa-lg"></i></a>
-	      {% assign club = site.clubs | where_exp:"c","c.path contains action.who" %}
-	      <h5>{{ club.title }}</h5>
-	      <h4>{{ action.title }}</h4>
-	      <p>{{ action.detail | markdownify }}</p>
-	    </figcaption>
+      <div class="row">
+        {% assign actions=include.actions | reverse %}
+        {% for action in actions limit:8 %}
+          <figure class="col-xs-12 col-sm-12 col-md-6 work-item">
+	      <img class="img-responsive thumbnail center-block" src="{% unless action.photo contains 'assets' %}/assets/media/{% endunless %}{{ action.photo }}" alt="{{ action.title }}" />
+	      <figcaption class="overlay">
+	        <a class="fancybox" rel="works" title="{{ action.title }}" href="{% unless action.photo contains 'assets' %}/assets/media/{% endunless %}{{ action.photo }}"><i class="fa fa-eye fa-lg"></i></a>
+	        {% assign club = site.clubs | where_exp:"c","c.path contains action.who" %}
+	        <h5>{{ club.title }}</h5>
+	        <h4>{{ action.title }}</h4>
+	        <p>{{ action.detail | markdownify }}</p>
+	      </figcaption>
 	  </figure>
-      {% endfor %}
+        {% endfor %}
+      </div>
 
     </div>
+    <div class="col-sm-4 col-xs-12">
+      {% include facebook.html %}
+    </div>
+  </div>
+
 
   {% if include.data.outro %}
     <div class="sec-title text-center">

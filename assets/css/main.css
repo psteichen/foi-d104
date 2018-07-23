@@ -384,8 +384,8 @@ top: -8px;
 }
 
 .work-item {
-    float: left;
-    width: 25%;
+    float: center;
+    width: 50%;
     position: relative;
 }
 
