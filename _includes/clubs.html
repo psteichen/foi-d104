@@ -21,6 +21,7 @@
               <img src="{% unless club.logo contains 'assets' %}/assets/media/clubs/{% endunless %}{{ club.logo }}" alt="{{ club.name }}" class="img-responsive center-block">
               <figcaption class="overlay" data-toggle="modal" data-target="#{{ club.slug }}Modal">
                 <div class="text-center mt25">
+                  <h5>{{ club.title }}</h5>
 	          <i class="fa fa-info fa-lg"></i>
                   <p>{{ data.details }}</p>
                 </div>
