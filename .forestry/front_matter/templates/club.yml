@@ -41,9 +41,9 @@ fields:
     schema:
       format: markdown
 pages:
+- _clubs/echternach.md
 - _clubs/esch-alzette.md
 - _clubs/gelle-fra.md
-- _clubs/echternach.md
 - _clubs/moselle.md
 - _clubs/luxembourg-1.md
 - _clubs/guttland.md
