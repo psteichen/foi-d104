@@ -5,14 +5,14 @@ logo: district.jpg
 intro: Le Grand-Duché du Luxembourg rejoins le mouvement FIFTY-ONE International en
   1985 et devient le District 104.
 committee:
+- name: Marc Belleville
+  title: gouv
+  photo: bellevillemarc.jpg
 - name: Alex Mertzig
   title: pgouv
   photo: mertzigalex.jpg
   message: ''
   video: ''
-- name: Marc Belleville
-  title: gouv
-  photo: bellevillemarc.jpg
 - name: Marc Walch
   title: secr
   photo: walchmarc.jpg
