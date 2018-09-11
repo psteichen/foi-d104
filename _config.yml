@@ -31,6 +31,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - design
+  - config-forestryio.yml
 
 deploy:
   - rsync -aze ssh --delete ./ pst@aperta.lu:/var/www/fiftyone.lu/preprod/
