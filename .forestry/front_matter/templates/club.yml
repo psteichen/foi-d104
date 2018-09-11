@@ -30,7 +30,7 @@ fields:
       source:
         type: datafiles
         file: _data-titles-yml
-        path: titles
+        path: ''
     label: Titre
     default: 
 - type: textarea
@@ -42,14 +42,14 @@ fields:
       format: markdown
 pages:
 - _clubs/esch-alzette.md
-- _clubs/echternach.md
-- _clubs/europe.md
 - _clubs/gelle-fra.md
-- _clubs/aperta.md
-- _clubs/eislek.md
-- _clubs/letzebuerg.md
-- _clubs/bassin-minier.md
-- _clubs/luxembourg.md
-- _clubs/guttland.md
-- _clubs/luxembourg-1.md
+- _clubs/echternach.md
 - _clubs/moselle.md
+- _clubs/luxembourg-1.md
+- _clubs/guttland.md
+- _clubs/europe.md
+- _clubs/luxembourg.md
+- _clubs/eislek.md
+- _clubs/bassin-minier.md
+- _clubs/letzebuerg.md
+- _clubs/aperta.md
