@@ -1,0 +1,29 @@
+---
+title: FIFTY-ONE International | District 104 | Luxembourg
+logo: logo.png
+email: admin@fiftyone.lu
+description: 'Depuis 51 ans le soutien de projets sociaux à travers l''amitié, l''estime,
+  la tolérance
+
+'
+baseurl: ''
+url: https://preprod.fiftyone.lu
+facebook: fiftyone-district104
+collections:
+  events:
+    output: true
+    permalink: "/events/:title/"
+  actions:
+    output: true
+    permalink: "/actions/:title/"
+  clubs:
+    output: true
+    permalink: "/clubs/:title/"
+markdown: kramdown
+exclude:
+- Gemfile
+- Gemfile.lock
+- design
+deploy:
+- rsync -aze ssh --delete ./ pst@aperta.lu:/var/www/fiftyone.lu/preprod/
+timezone: Europe/Amsterdam

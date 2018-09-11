@@ -5,9 +5,9 @@ facts:
 - title: Nombre de clubs
   icon: building-o
   number: 12
-- title: Dons (en €) réalisés en 2016
+- title: Dons (en €) réalisés en 2017/2018
   icon: money
-  number: 36400
+  number: 121399.45
 - title: Nombre de membres
   icon: users
   number: 300
