@@ -42,7 +42,7 @@
                 <div class="modal-body">
                   {% if club.image %}<img src="{% unless club.image contains 'assets' %}/assets/media/{% endunless %}{{ club.image }}" alt="{{ club.title }}" class="img-responsive center-block" />{% endif %}
         		  <br/>
-                  {% if club.desc != '' %}<p>{{ club.desc }}</p>{% endif %}
+                  {% if club.desc != '' %}<p>{{ club.desc | markdownify }}</p>{% endif %}
                   {% if club.committee[0] %}<h4>{{ data.committee }}</h4>{% endif %}
                   {% for member in club.committee %}
                     <div class="btn-group">
