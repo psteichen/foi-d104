@@ -15,8 +15,12 @@
           <img class="img-thumnbail" height="300" src="/assets/media/{{ include.data.logo }}"/>
         </div>
 
-        <h3>{{ include.data.committee.title }}</h3>
-        {% if include.data.committee.photo %}<img class="img-thumnbail" height="300" src="/assets/media/{{ include.data.committee.photo }}"/>{% endif %}
+        <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
+          <h3>{{ include.data.committee.title }}</h3>
+          {% if include.data.committee.photo %}<img class="img-thumnbail" height="300" src="/assets/media/{{ include.data.committee.photo }}"/>{% endif %}
+          <br />
+          <br />
+        </div>
 
         <div class="col-md-1"></div>
         {% for member in include.data.committee.members %}
