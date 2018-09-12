@@ -15,8 +15,11 @@
           <img class="img-thumnbail" height="300" src="/assets/media/{{ include.data.logo }}"/>
         </div>
 
+        <h3>{{ include.data.committee.title }}</h3>
+        {% if include.data.committee.photo %}<img class="img-thumnbail" height="300" src="/assets/media/{{ include.data.committee.photo }}"/>{% endif %}
+
         <div class="col-md-1"></div>
-        {% for member in include.data.committee %}
+        {% for member in include.data.committee.members %}
           <figure class="team-member col-md-2 col-sm-6 col-xs-6 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
             <div class="member-thumb">
               <img src="/assets/media/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive img-circle center-block">
