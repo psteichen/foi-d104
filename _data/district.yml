@@ -7,17 +7,16 @@ intro: Le Grand-Duché du Luxembourg rejoins le mouvement FIFTY-ONE Internationa
 committee:
   title: Le comité du District
   photo: "/assets/media/all.jpg"
+  caption: "Photo prise lors de la dernière réunion du comité du 20.8.18 . De gauche à droite : Fernand Greisen, « past secrétaire » du district, Jean-Paul Gemmer, trésorier, Ronny Oestreicher, Gouverneur du District 122 et Administrateur membre du Conseil Général, Alex Mertzig, Past Gouverneur et moi-même. Absents : Sepp Pannrucker, Trésorier Général du FOI et Marc Walch, secrétaire du District 104"
   members:
   - name: Alex Mertzig
-    title: vgouv
+    title: pgouv
     photo: "/assets/media/alex.jpg"
-    message: ''
   - name: Marc Belleville
     title: gouv
     photo: "/assets/media/marc_b.jpg"
   - name: Marc Walch
     title: secr
-    photo: walchmarc.jpg
   - name: Jean-Paul Gemmer
     title: treso
     photo: "/assets/media/gemmi.jpg"

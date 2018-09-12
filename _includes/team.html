@@ -17,16 +17,21 @@
 
         <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
           <h3>{{ include.data.committee.title }}</h3>
-          {% if include.data.committee.photo %}<img class="img-thumnbail" height="300" src="/assets/media/{{ include.data.committee.photo }}"/>{% endif %}
           <br />
+          {% if include.data.committee.photo %}<img class="img-thumnbail" height="300" src="{% unless include.data.committee.photo contains 'assets' %}/assets/media/{% endunless %}{{ include.data.committee.photo }}"/>{% endif %}
+          <p>{% if include.data.committee.caption %}<small>{{ include.data.committee.caption }}</small>{% endif %}</p>
           <br />
         </div>
+      </div>
 
-        <div class="col-md-1"></div>
+      <div class="row">
+        <div class="col-md-2"></div>
         {% for member in include.data.committee.members %}
           <figure class="team-member col-md-2 col-sm-6 col-xs-6 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
             <div class="member-thumb">
-              <img src="/assets/media/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive img-circle center-block">
+              {% if member.photo %}
+              <img src="{% unless member.photo contains 'assets' %}/assets/media/{% endunless %}{{ member.photo }}" alt="{{ member.name }}" class="img-responsive center-block">
+              {% else %}<br/><br/><br/><i class="fa fa-user fa-5x"></i>{% endif%}
               {% if member.message %} 
                 <figcaption class="overlay" data-toggle="modal" data-target="#{{ member.title }}Modal">
                   <em>{{ member.message }}</em>
@@ -64,7 +69,7 @@
           </div>
         {% endfor %}
 
-        <div class="col-md-1"></div>
+        <div class="col-md-2"></div>
 
       </div>
     </div>

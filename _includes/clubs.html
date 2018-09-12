@@ -19,16 +19,17 @@
           <figure class="team-member col-md-3 col-sm-6 col-xs-6 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="100ms">
             <div class="member-thumb">
               <img src="{% unless club.logo contains 'assets' %}/assets/media/clubs/{% endunless %}{{ club.logo }}" alt="{{ club.name }}" class="img-responsive center-block">
+              <h4>{{ club.title }}</h4>
+
               <figcaption class="overlay" data-toggle="modal" data-target="#{{ club.slug }}Modal">
                 <div class="text-center mt25">
                   <h5>{{ club.title }}</h5>
-	          <i class="fa fa-info fa-lg"></i>
+	              <i class="fa fa-info fa-lg"></i>
                   <p>{{ data.details }}</p>
                 </div>
               </figcaption>
+
             </div>
-            <h4>{{ club.title }}</h4>
-            <p>{{ club.tagline | markdownify }}</p>
           </figure>
 
           <div class="modal fade" id="{{ club.slug }}Modal" tabindex="-1" role="dialog" aria-labelledby="{{ club.slug }}ModalLabel">
