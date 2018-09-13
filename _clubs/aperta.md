@@ -15,7 +15,7 @@ committee:
   title: secr
 - name: Tom Welter
   title: treso
-desc: "### Aperta\n\n_nominatif féminin singulier de   \n_**apertus** _/aːˈpeɾ.tus/_\n\n1.
+desc: "### Aperta\n\n_nominatif féminin singulier_ de   \n**apertus** _/aːˈpeɾ.tus/_\n\n1.
   Ouvert, découvert\n2. Qui a lieu au grand jour\n3. Manifeste, clair"
 date: 2018-04-16 07:35:25 +0000
 image: "/assets/media/20150528_Aperta_560x250.jpg"
