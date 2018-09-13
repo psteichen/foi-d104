@@ -8,7 +8,7 @@ committee:
 - name: Diane Prüm
   title: presi
 - name: Fränk Rollinger
-  title: vgouv
+  title: vpresi
 - name: Pascal Steichen
   title: proto
 - name: Charles Ries
