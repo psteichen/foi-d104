@@ -44,18 +44,17 @@
                   {% if club.image %}<img src="{% unless club.image contains 'assets' %}/assets/media/{% endunless %}{{ club.image }}" alt="{{ club.title }}" class="img-responsive center-block" />{% endif %}
         		  <br/>
                   {% if club.desc != '' %}<p>{{ club.desc | markdownify }}</p>{% endif %}
-                </div>
                 {% if club.sns %}
-                <div class="modal-footer">
-                  <h5 class="pull-left">Contactez ce club :</h5>
-                  <ul class="social-links text-center">
+        		  <hr/>
+                  <ul class="social-links">
+                    <li>Contactez ce club :</li>
                     {% if club.sns.email %}<li><a href="mailto:{{ club.sns.email }}"><i class="fa fa-envelope fa-lg"></i></a></li>{% endif %}
                     {% if club.sns.tw %}<li><a href="https://twitter.com/{{ club.sns.tw }}"><i class="fa fa-twitter fa-lg"></i></a></li>{% endif %}
                     {% if club.sns.fb %}<li><a href="https://facebook.com/{{ club.sns.fb }}"><i class="fa fa-facebook fa-lg"></i></a></li>{% endif %}
                     {% if club.sns.in %}<li><a href="https://linkedin.com/{{ club.sns.in }}"><i class="fa fa-linkedin fa-lg"></i></a></li>{% endif %}
                   </ul>
-                </div>
                 {% endif %}
+                </div>
               </div>
             </div>
           </div>
