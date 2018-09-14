@@ -44,23 +44,15 @@
                   {% if club.image %}<img src="{% unless club.image contains 'assets' %}/assets/media/{% endunless %}{{ club.image }}" alt="{{ club.title }}" class="img-responsive center-block" />{% endif %}
         		  <br/>
                   {% if club.desc != '' %}<p>{{ club.desc | markdownify }}</p>{% endif %}
-                  {% if club.committee[0] %}<h4>{{ data.committee }}</h4>{% endif %}
-                  {% for member in club.committee %}
-                    <div class="btn-group">
-                      <div class="btn btn-default">
-                      {% if member.photo %}<img src="{% unless member.photo contains 'assets' %}/assets/media/{% endunless %}{{ member.photo }}" alt="{{ member.name }}" class="img-responsive img-circle center-block" />{% endif %}
-                      <h5>{{ member.name }}</h5>
-                      <small>{{ site.data.titles[member.title] }}</small>
-                      </div>
-                    </div>
-                  {% endfor %}
                 </div>
                 {% if club.sns %}
                 <div class="modal-footer">
+                  <h5 class="pull-left">Contactez ce club :</h5>
                   <ul class="social-links text-center">
-                    <li><a href="https://twitter.com/{{ club.sns.tw }}"><i class="fa fa-twitter fa-lg"></i></a></li>
-                    <li><a href="https://facebook.com/{{ club.sns.fb }}"><i class="fa fa-facebook fa-lg"></i></a></li>
-                    <li><a href="https://linkedin.com/{{ club.sns.in }}"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                    {% if club.sns.email %}<li><a href="mailto:{{ club.sns.email }}"><i class="fa fa-envelope fa-lg"></i></a></li>{% endif %}
+                    {% if club.sns.tw %}<li><a href="https://twitter.com/{{ club.sns.tw }}"><i class="fa fa-twitter fa-lg"></i></a></li>{% endif %}
+                    {% if club.sns.fb %}<li><a href="https://facebook.com/{{ club.sns.fb }}"><i class="fa fa-facebook fa-lg"></i></a></li>{% endif %}
+                    {% if club.sns.in %}<li><a href="https://linkedin.com/{{ club.sns.in }}"><i class="fa fa-linkedin fa-lg"></i></a></li>{% endif %}
                   </ul>
                 </div>
                 {% endif %}

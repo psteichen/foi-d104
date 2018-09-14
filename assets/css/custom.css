@@ -26,3 +26,7 @@ a.fancybox {
 .member-thumb {
   height: 250px;
 }
+
+.modal .social-links li a {
+  color: #337ab7;
+}
