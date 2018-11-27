@@ -7,18 +7,24 @@ sections:
 - type: directory
   path: _events
   label: Events
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - minimaster-au-benefice-d-unicef
 - type: directory
   path: _clubs
   label: Clubs
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - club
 - type: directory
   path: _actions
   label: Actions
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - don-pour-actions-for-life-project
 - type: jekyll-pages
   label: Pages
   create: all
