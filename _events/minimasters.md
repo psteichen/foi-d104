@@ -1,7 +1,7 @@
 ---
 title: An der Chrëschtvakanz spillen d’Kanner op RTL Radio Lëtzebuerg nees mam „Fifty-One“
   fir d‘SOS Kannerduerf.
-image: minimasters.jpg
+image: "/assets/media/kannerduerf.jpg"
 tagline: All Dag stellen zwee Kanner engem Prominenten 3 Quizfroen, déi se selwer
   erausgesicht hun.
 desc: |-
