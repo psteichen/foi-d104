@@ -3,7 +3,7 @@
     <div id="carousel-events" class="carousel slide" data-ride="carousel">
       <!-- Indicators bullet -->
       <ol class="carousel-indicators">
-        {% for s in site.events %}
+        {% for s in site.events reversed %}
           <li data-target="#carousel-events" data-slide-to="{{ forloop.index }}" {% if forloop.first %}class="active"{% endif %}></li>
         {% endfor %}
       </ol>
@@ -12,11 +12,11 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
 
-      {% for slide in site.events %}
+      {% for slide in site.events reversed %}
 
         <!-- single slide -->
-	<div class="item {% if forloop.first %}active{% endif %}" style="background-image: url('/assets/media/{{ slide.image }}');">
-	  <div class="carousel-caption">
+	<div class="item {% if forloop.first %}active{% endif %}" style="background-image: url('{% unless slide.image contains 'assets' %}/assets/media/{% endunless %}{{ slide.image }}');">
+	  <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.4);">
 	    <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">{{ slide.title }}</h2>
 	    <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">{{ slide.tagline }}</h3>
 	    {% if slide.desc %}<p data-wow-duration="1000ms" class="wow slideInRight animated">{{ slide.desc | markdownify }}</p>{% endif %}
