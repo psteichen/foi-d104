@@ -30,6 +30,3 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-pages:
-- _events/51-anniversaire.md
-- _events/minimasters.md
