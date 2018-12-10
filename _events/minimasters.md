@@ -1,9 +1,7 @@
 ---
-title: An der Chrëschtvakanz spillen d’Kanner op RTL Radio Lëtzebuerg nees mam „Fifty-One“
-  fir d‘SOS Kannerduerf.
+title: Aktioun "Minimasters" Chrëschtvakanz fir SOS Kannerduerf (op RTL Radio Lëtzebuerg)
 image: "/assets/media/kannerduerf.jpg"
-tagline: All Dag stellen zwee Kanner engem Prominenten 3 Quizfroen, déi se selwer
-  erausgesicht hun.
+tagline: All Dag stellen zwee Kanner engem Promi 3 Froen
 desc: |-
   D’Kanner (tëscht 8 an 9 Joer jonk) kommen an de Studio a fir all Fro, déi de Promi richteg beäntwerte kann, gett et Sue vum „Fifty- One“fir d‘SOS Kannerduerf: 
 
