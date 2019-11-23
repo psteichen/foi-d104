@@ -29,3 +29,5 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+pages:
+- _events/rtl-spezial-famillen-duell-weltkannerdag-fifty-one-edition.md
