@@ -4,6 +4,5 @@ date: 2021-03-03 00:00:00 +0100
 who: ''
 photo: "/assets/media/dsc05526.jpeg"
 detail: ''
-published: false
 
 ---
