@@ -10,7 +10,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
-  - minimaster-au-benefice-d-unicef
+  - event
 - type: directory
   path: _clubs
   label: Clubs
@@ -24,7 +24,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
-  - don-pour-actions-for-life-project
+  - action
 upload_dir: assets/media
 public_path: "/assets/media"
 front_matter_path: ''
