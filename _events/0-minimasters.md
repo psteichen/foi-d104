@@ -8,6 +8,7 @@ desc: |-
   Woch vun der Chrëschtvakanz laafen déi 10 Mini-Quizen zu ennerschiddlechen Zäiten: 
 
   vun Méindes 24/12 bis Freides 28/12 2x am Dag
-date: 2018-04-16 07:35:25 +0000
+date: 2018-04-16T07:35:25.000+00:00
+published: false
 
 ---
